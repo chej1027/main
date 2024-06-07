@@ -1,0 +1,252 @@
+@charset "utf-8";
+* {
+    color: #222328;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ }
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+#wrap {
+    width: 1280px;
+    height: 1300px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 118px;
+}
+header>div{
+    float: left;
+    height: 118px;
+}
+#main {
+    width: 154px;
+    height: 100%;
+    text-align: center;
+}
+#logo {
+    width: 1126px;
+    height: 100%;
+    text-align: center;
+    margin-left: -85px;
+}
+header #main img{
+    width: 50px;
+    height: 60px;
+    margin-top: 25px;
+}
+header #logo img {
+    margin-top: 15px;
+    width: 250px;
+    height: 80px;
+}
+#menu {
+    width: 80%;
+    height: 85px;
+    margin: 0 auto; 
+}
+#menu nav {
+    width: 100%;
+    height: 85px;
+    position: relative;
+    z-index: 999;
+}
+#menu nav #main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+#menu nav #main-menu ul li {
+    flex: 1; 
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0; 
+    padding: 0; 
+}
+#menu nav #main-menu ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: gray;
+    user-select: none;
+    position: relative; 
+    display: inline-block;
+    padding-bottom: 15px; 
+}
+#menu nav #main-menu ul li a:hover {
+    color: #000;
+    margin-bottom: -10px;
+}
+#menu nav #main-menu ul li a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    height: 1.5px;
+    background-color: #000; 
+}
+
+.slider {
+    width: 100%;
+    height: 723px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider a {
+    top: 0;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slider a:first-child {
+    left: 0;
+}
+
+.slider a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.sub-main {
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.sub-main>div{
+    float: left;
+    width: 430px;
+    height: 200px;
+    padding: 15px;
+    overflow: hidden;
+}
+.sub-main .news .news-box .tab{
+    width:100%;
+    height: 30px;
+}
+.sub-main .news .news-box .tab>div{
+    float: left;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.sub-main .news .news-box .notice-list, .gallery-list {
+    width: 100%;
+    min-height: 155px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    padding: 18px;
+}
+.sub-main .news .news-box .tab  .t-notice {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-left: 15px;
+}
+.sub-main .news .news-box .tab .t-gallery{
+    background-color: #aaa;
+    margin-left: -1px;
+}
+.sub-main .news .news-box .notice-list ul{
+    margin: 0;
+    padding: 0;
+}
+.sub-main .news .news-box .notice-list ul li{
+    font-size: 14px;
+    height: 25px;
+    border-bottom: 1px solid #000;
+    line-height: 25px;
+    }
+.sub-main .news .news-box .gallery-list{
+        text-align: center;
+        padding: 20px;
+        display: none;
+}
+.sub-main .news .news-box .gallery-list img{
+        width: 80px;
+        height: 90px;
+        margin: 12px 10px 0 10px;
+}
+.sub-main .news .news-box .notice-list .gallery-list {
+        width: 100%;
+        min-height: 155px;
+        border: 1px solid #000;
+        margin-top: -1px;
+        padding: 18px;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner video {
+    width: 100%;
+    height: auto;
+}
+
+.links {
+    width: 100%;
+    height: 200px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.links .link-background {
+    width: 100%;
+    min-height: 185px;
+    background-color: #dfdfdf;
+}
+
+.links img {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+.links img:hover {
+    border-radius: 50%;
+}
+
+.links .link-background div {
+    display: inline-block;
+    text-align: center;
+    padding-top: 40px !important;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    clear: both;
+}
+footer #logo {
+    width: 100%;
+    padding-top: 45px;
+    margin-left: 15px;
+}
+footer #logo img {
+    width: 174px;
+    height: 80px;
+}
+
